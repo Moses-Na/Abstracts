@@ -1,9 +1,14 @@
 public class employee extends team {
-    public void printInfo(){
-         String name = "Shaggs";
-         String title = "Manager";
-         int age = 24;
+    private final String details;
 
-         System.out.println("Name:- " + name + "Manager:- " + title + "Age:- " + age);
+    public employee(String name, String title, String details) {
+        super(name, title);
+        this.details = details;
+
+    }
+
+    @Override
+    public void printInfo() {
+        System.out.println("Employee Name:- " + name + "Employee title:- " + title + "Employee details:- " + details);
     }
 }
