@@ -1,3 +1,10 @@
 public abstract class team {
-    abstract void printInfo();
+    public String name;
+    public String title;
+
+    public team(String name, String title){
+        this.name = name;
+        this.title = title;
+    }
+    public abstract void printInfo();
 }
